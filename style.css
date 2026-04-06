@@ -1,3 +1,48 @@
-.movie-like {
-  color: brown;
+.card {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden; /* Чтобы картинка не вылезала за скругленные углы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+  font-family: sans-serif;
+  transition: 0.3s; /* Плавность при наведении */
+}
+
+/* Эффект при наведении */
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+}
+
+.card-text {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
 }
